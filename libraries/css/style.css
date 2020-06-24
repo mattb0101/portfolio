@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.navbar {
+    flex: 1 1 20%;
+    background-color: #333;
+}
+
+.content {
+    flex: 1 1 80%;
+    background-color: #636363
+}
