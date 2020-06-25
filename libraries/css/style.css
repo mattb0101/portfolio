@@ -1,21 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Josefin Sans", cursive;
 }
 
 body {
     display: flex;
     flex-wrap: nowrap;
-    height: 100vh;
+    height: 100vh;    
 }
 
 .navbar {
     flex: 1 1 20%;
     background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+nav {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
 .content {
     flex: 1 1 80%;
-    background-color: #636363
+    background-color: #636363;
+    padding: 10vmin;
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.portfolio-item {
+    background-color: #751d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.portfolio-item.mini {
+    grid-row: span 2;
+    grid-column: span 1;    
+}
+
+.portfolio-item.main {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.portfolio-item.in-progress {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portfolio-item.long {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
 }
