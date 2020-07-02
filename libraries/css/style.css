@@ -28,6 +28,11 @@ nav {
     flex-direction: column;
 }
 
+.navbar h1 {
+    display: flex;
+    align-self: center;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -51,9 +56,18 @@ nav a {
 
 .portfolio-item {
     background-color: #751d1d;
+    border-radius: 0.5vmin;
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .portfolio-item.mini {
