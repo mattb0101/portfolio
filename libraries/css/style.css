@@ -57,9 +57,7 @@ nav a {
 .portfolio-item {
     background-color: #751d1d;
     border-radius: 0.5vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    border: 0.5vmin solid #751d1d;
 }
 
 .portfolio-item a {
@@ -67,7 +65,18 @@ nav a {
     color: #fff;
     height: 100%;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmin;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.0);
+    transition: all ease 1s;
+}
+
+.portfolio-item a:hover {
+    background-color: rgba(0,0,0,0.7);
+    transition: all ease 1s;    
 }
 
 .portfolio-item.mini {
@@ -88,6 +97,14 @@ nav a {
 .portfolio-item.long {
     grid-row: span 1;
     grid-column: span 2;
+}
+
+/*-----------------------------Specific Items-----------*/
+
+#diddy {
+    background-image: url(../img/diddy-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 600px) {
