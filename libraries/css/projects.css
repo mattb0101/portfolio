@@ -1,0 +1,82 @@
+
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.portfolio-item {
+    background-color: #751d1d;
+    border-radius: 0.5vmin;
+    border: 0.5vmin solid #751d1d;
+    animation-name: slideInToPage;
+    animation-duration: 1.5s;
+
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmin;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.0);
+    transition: all ease 1s;
+}
+
+.portfolio-item a:hover {
+    background-color: rgba(0,0,0,0.7);
+    transition: all ease 1s;    
+}
+
+.portfolio-item.mini {
+    grid-row: span 2;
+    grid-column: span 1;    
+}
+
+.portfolio-item.main {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.portfolio-item.in-progress {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portfolio-item.long {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+/*-----------------------------Specific Items-----------*/
+
+#diddy {
+    background-image: url(../img/diddy-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+/*-----------------------------Key Frames-----------*/
+ 
+@keyframes slideInToPage {
+    0% {
+        transform: translatex(500%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
