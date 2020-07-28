@@ -5,17 +5,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", cursive;
+    color: var(--text-clr-light); 
 }
 
 :root {
     --primary-clr-dark: #333;
     --secondary-clr-dark: #636363;
+
+    --text-clr-light: #f8f8ff;
+    --text-clr-dark: #121212;
 }
 
 body {
     display: flex;
     flex-wrap: nowrap;
-    height: 100vh;    
+    height: 100vh;
 }
 
 
@@ -26,26 +30,35 @@ body {
     background-color: var(--primary-clr-dark);
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: var(--text-clr-dark);
+}
+
+.navbar h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem;
+    color: var(--text-clr-dark);
 }
 
 nav {
     margin-top: 2vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-
-.navbar h1 {
-    display: flex;
-    align-self: center;
-}
-
 nav a {
-    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 20px;
+    text-align: center;
 }
 
 .social-container {
@@ -57,13 +70,14 @@ nav a {
     width: 20%;
     height: 10vh;
     list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-container li a i {
     height: 5vmin;
     width: 5vmin;
     font-size: 3vmin;
-    color: #fff;
     padding: 1vmin 0;
     background: linear-gradient(#000, #6e6e6e);
     text-align: center;

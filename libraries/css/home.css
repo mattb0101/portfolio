@@ -1,0 +1,25 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+}
+
+.content h3 {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.what {
+    grid-area: 2 / 1;
+}
+
+.how {
+    grid-area: 2 / 2;
+}
+
+.why {
+    grid-area: 3 / 1;
+}
+
+.personal-info {
+    grid-area: 3 / 2;
+}
